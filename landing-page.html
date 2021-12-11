@@ -206,11 +206,11 @@
     </nav>
 
     <section>
-      <div class="max-w-6xl mx-auto p-4 flex flex-col-reverse sm:flex-row">
-        <div class="md:w-6/12 py-10">
+      <div class="max-w-6xl mx-auto p-4 flex flex-col sm:flex-row">
+        <div class="md:w-6/12 md:py-10">
           <!-- <section class="cd-intro"> -->
           <h1
-            class="font-bold cd-headline slide text-center md:hidden w-full"
+            class="md:hidden font-bold cd-headline slide text-center w-full"
             style="line-height: 5rem"
           >
             <span class="md:text-3xl text-xl">Belanja Impor China untuk</span>
@@ -238,15 +238,34 @@
               </span>
             </div>
           </h1>
+
           <h6
-            class="text-center md:text-left text-lg md:text-md lg:text-lg p-4"
+            class="
+              text-center
+              md:text-left
+              text-lg
+              md:text-md
+              lg:text-lg
+              p-4
+              md:mt-0
+              -mt-5
+              mb-10
+              md:mt-0
+            "
             style="line-height: 2.2rem"
           >
             Nikmati Belanja Produk Impor China Paling Mudah dan Aman Pakai
             Aplikasi <strong>LapakChina</strong>.
           </h6>
         </div>
-        <div class="md:w-6/12 flex justify-center"></div>
+        <div class="md:w-6/12 flex justify-center">
+          <img
+            src="images/header-image.png"
+            class="md:w-3/6 object-cover"
+            style="z-index: 99"
+            alt=""
+          />
+        </div>
       </div>
       <div
         class="
@@ -455,7 +474,7 @@
           space-y-14
         "
       >
-        <h1 class="font-extrabold md:text-2xl text-xl">
+        <h1 class="font-extrabold md:text-2xl text-lg">
           Pilihan Produk Unik Dengan Harga Termurah Yang Dapat Kamu Temukan Di
           <span class="text-red-600">LapakChina</span>
         </h1>
@@ -532,8 +551,8 @@
         >
           <div class="md:w-6/12 flex justify-center">
             <img
-              src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/IMG_5011_LandingPage.png?v=1630664302"
-              class="w-60"
+              src="images/footer-image.png"
+              class="w-60 object-cover"
               style="z-index: 99"
               alt=""
             />
@@ -552,8 +571,7 @@
               class="
                 flex
                 justify-center
-                md:justify-start md:mt-1 md:-ml-4
-                -space-x-4
+                md:justify-start md:mt-1 md:-ml-4 md:-space-x-4
               "
             >
               <div>
@@ -562,7 +580,7 @@
                   target="_blank"
                   ><img
                     src="images/gplay.png"
-                    class="object-cover w-20 md:w-44"
+                    class="object-cover w-32 md:w-44"
                     alt=""
                 /></a>
               </div>
@@ -570,7 +588,7 @@
                 <a href="" target="_blank">
                   <img
                     src="images/appstore.png"
-                    class="object-cover w-20 md:w-44"
+                    class="object-cover w-32 md:w-44"
                     alt=""
                 /></a>
               </div>
@@ -627,15 +645,9 @@
       </div>
     </footer>
 
-    <script>
-      const btn = document.querySelector("button.mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
-
+    <!-- Resource jQuery -->
     <script src="js/jquery-2.1.1.js"></script>
+
     <script src="js/main.js"></script>
 
     <script
@@ -682,6 +694,12 @@
       });
     </script>
 
-    <!-- Resource jQuery -->
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
