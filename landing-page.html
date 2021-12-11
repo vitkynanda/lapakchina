@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lapak China</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar goes here -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div>
+            <!-- Website Logo -->
+            <a href="#" class="flex items-center py-4 px-2">
+              <img
+                src="https://lapakchina.com/uploads/20210622/d375da01a033b8e8cbfb70e78be596a9.jpg"
+                alt="Logo"
+                class="mr-2"
+              />
+            </a>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <div class="md:flex items-center space-x-1">
+              <a
+                href="about.html"
+                class="
+                  py-4
+                  px-2
+                  text-gray-500
+                  visited:text-red-600 visited:border-b-4 visited:border-b-4
+                  border-red-500
+                  font-semibold
+                  hover:text-red-600
+                  transition
+                  duration-300
+                "
+                >Tentang Kami</a
+              >
+              <a
+                href="https://blog.lapakchina.com"
+                class="
+                  py-4
+                  px-2
+                  text-gray-500
+                  font-semibold
+                  hover:text-red-600
+                  transition
+                  duration-300
+                "
+                >Blog</a
+              >
+            </div>
+            <div class="space-x-1">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.lapak.china"
+                class="
+                  py-2
+                  px-5
+                  font-medium
+                  text-gray-500
+                  rounded
+                  hover:bg-red-600 hover:text-white
+                  transition
+                  duration-300
+                "
+                >Masuk</a
+              >
+              <a
+                href="https://play.google.com/store/apps/details?id=com.lapak.china"
+                class="
+                  py-2
+                  px-5
+                  font-medium
+                  text-white
+                  bg-red-600
+                  rounded
+                  hover:bg-red-400
+                  transition
+                  duration-300
+                "
+                >Daftar</a
+              >
+            </div>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-gray-500 hover:text-red-600"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li class="active">
+            <a
+              href="about.html"
+              class="
+                block
+                text-sm
+                px-2
+                py-4
+                text-white
+                bg-red-600
+                font-semibold
+              "
+              >Tentang Kami</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://blog.lapakchina.com"
+              class="
+                block
+                text-sm
+                px-2
+                py-4
+                hover:bg-red-600 hover:text-white
+                transition
+                duration-300
+              "
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.lapak.china"
+              class="
+                block
+                text-sm
+                px-2
+                py-4
+                hover:bg-red-600 hover:text-white
+                transition
+                duration-300
+              "
+              >Daftar</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.lapak.china"
+              class="
+                block
+                text-sm
+                px-2
+                py-4
+                hover:bg-red-600 hover:text-white
+                transition
+                duration-300
+              "
+              >Masuk</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <div class="max-w-6xl mx-auto p-4 flex flex-col-reverse sm:flex-row">
+        <div class="md:w-6/12 py-10">
+          <!-- <section class="cd-intro"> -->
+          <h1
+            class="font-bold cd-headline slide text-center md:hidden w-full"
+            style="line-height: 5rem"
+          >
+            <span class="md:text-3xl text-xl">Belanja Impor China untuk</span>
+            <div
+              class="cd-words-wrapper md:text-3xl text-red-600 text-xl w-full"
+            >
+              <b class="is-visible w-full">Semua</b>
+              <b class="w-full">Wirausahawan</b>
+              <b class="w-full">Karyawan</b>
+              <b class="w-full">Ibu Rumah Tangga</b>
+              <b class="w-full">UMKM</b>
+            </div>
+          </h1>
+          <!-- </section> -->
+          <h1 class="hidden md:block cd-headline slide is-full-width">
+            <span class="md:text-3xl font-bold ml-3">Belanja Impor China</span>
+            <div class="flex space-x-4">
+              <span class="md:text-3xl font-bold ml-3">untuk</span>
+              <span class="cd-words-wrapper md:text-3xl font-bold text-red-600">
+                <b class="is-visible">Semua</b>
+                <b>Wirausahawan</b>
+                <b>Karyawan</b>
+                <b>Ibu Rumah Tangga</b>
+                <b>UMKM</b>
+              </span>
+            </div>
+          </h1>
+          <h6
+            class="text-center md:text-left text-lg md:text-md lg:text-lg p-4"
+            style="line-height: 2.2rem"
+          >
+            Nikmati Belanja Produk Impor China Paling Mudah dan Aman Pakai
+            Aplikasi <strong>LapakChina</strong>.
+          </h6>
+        </div>
+        <div class="md:w-6/12 flex justify-center"></div>
+      </div>
+      <div
+        class="
+          bg-gradient-to-b
+          from-white
+          to-red-200
+          h-24
+          md:-mt-8
+          rounded-b-2xl
+          -mt-18
+        "
+      ></div>
+    </section>
+
+    <section>
+      <div
+        class="h-full max-w-6xl mx-auto md:px-4 p-10 flex items-center flex-col"
+      >
+        <div
+          class="
+            grid
+            md:grid-cols-4
+            grid-cols-2
+            md:bg-white md:shadow-lg md:p-5 md:gap-20
+            gap-3
+            rounded-md
+            w-full
+          "
+        >
+          <div
+            class="
+              flex-col flex
+              justify-center
+              items-center
+              text-center
+              space-y-2
+              shadow-lg
+              md:shadow-none
+              p-4
+              rounded-md
+            "
+          >
+            <p class="text-xs">Aplikasi Belanja Impor</p>
+            <p class="text-sm font-extrabold text-red-600 md:text-xl">
+              Pertama
+            </p>
+            <p class="text-sm font-extrabold">di Indonesia</p>
+          </div>
+          <div
+            class="
+              flex-col flex
+              justify-center
+              items-center
+              text-center
+              space-y-2
+              shadow-lg
+              md:shadow-none
+              p-4
+              rounded-md
+            "
+          >
+            <p class="text-xs">Pionir Belanja Impor</p>
+            <p class="text-sm font-extrabold text-red-600 md:text-xl">
+              Grosir & Satuan
+            </p>
+            <p class="text-sm font-extrabold">Tanpa Minimum Order</p>
+          </div>
+          <div
+            class="
+              flex-col flex
+              justify-center
+              items-center
+              text-center
+              space-y-2
+              shadow-lg
+              md:shadow-none
+              p-4
+              rounded-md
+            "
+          >
+            <p class="text-xs">Akses</p>
+            <p class="text-sm font-extrabold text-red-600 md:text-xl">24 Jam</p>
+            <p class="text-sm font-extrabold">Tidak Hanya Di Jam Kerja</p>
+          </div>
+          <div
+            class="
+              flex-col flex
+              justify-center
+              items-center
+              text-center
+              space-y-2
+              shadow-lg
+              md:shadow-none
+              p-4
+              rounded-md
+            "
+          >
+            <p class="text-xs">Banyak Pilihan</p>
+            <p class="text-sm font-extrabold text-red-600 md:text-xl">
+              Metode Pembayaran digital
+            </p>
+            <p class="text-sm font-extrabold">Dijamin Aman</p>
+          </div>
+        </div>
+        <div class="mt-10 space-y-5 text-center">
+          <h1 class="md:text-3xl text-xl font-extrabold">
+            Keunggulan Belanja Impor di
+            <span class="text-red-600 font-bold">LapakChina</span>
+          </h1>
+          <p>
+            LapakChina membantu semua kalangan untuk berbelanja produk Impor
+            China tanpa perlu pengalaman.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-b from-red-100 to-white rounded-t-3xl">
+      <div
+        class="
+          h-full
+          max-w-6xl
+          mx-auto
+          md:px-4
+          p-10
+          flex
+          items-center
+          flex-col
+          space-y-10
+        "
+      >
+        <h1 class="md:text-3xl text-xl md:text-left text-center font-extrabold">
+          Perbedaan Belanja Impor di Aplikasi
+          <span class="text-red-600">LapakChina</span> dengan Jasa Impor Lain
+        </h1>
+        <div class="grid grid-cols-2 md:gap-20 gap-3">
+          <div
+            class="bg-white md:p-10 p-3 rounded-md space-y-3 mb-10 shadow-lg"
+          >
+            <h1 class="md:text-2xl text-xs mb-5 font-semibold text-center">
+              Aplikasi
+              <span class="text-red-600 md:text-2xl text-xs">LapakChina</span>
+            </h1>
+            <div class="flex items-center space-x-2 text-gray-500">
+              <img src="images/check.svg" alt="" class="w-4" />
+              <p class="text-xs md:text-lg">Transaksi Melalui Aplikasi</p>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-500">
+              <img src="images/check.svg" alt="" class="w-4" />
+              <p class="text-xs md:text-lg">Bisa Satuan dan Grosir</p>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-500">
+              <img src="images/check.svg" alt="" class="w-4" />
+              <p class="text-xs md:text-lg">Gratis Biaya Member</p>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-500">
+              <img src="images/check.svg" alt="" class="w-4" />
+              <p class="text-xs md:text-lg">Gak Perlu Seminar</p>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-500">
+              <img src="images/check.svg" alt="" class="w-4" />
+              <p class="text-xs md:text-lg">Tanpa Biaya Gudang</p>
+            </div>
+          </div>
+          <div
+            class="bg-white md:p-10 p-3 rounded-md space-y-3 mb-10 shadow-lg"
+          >
+            <h1 class="md:text-2xl text-xs mb-5 font-semibold text-center">
+              Tempat Belanja Impor Lain
+            </h1>
+            <div class="flex items-center space-x-2 text-gray-500">
+              <img src="images/cross.svg" alt="" class="w-4" />
+              <p class="text-xs md:text-lg">Transaksi Manual</p>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-500">
+              <img src="images/cross.svg" alt="" class="w-4" />
+              <p class="text-xs md:text-lg">Harus Grosir</p>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-500">
+              <img src="images/cross.svg" alt="" class="w-4" />
+              <p class="text-xs md:text-lg">Bayar Biaya Member</p>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-500">
+              <img src="images/cross.svg" alt="" class="w-4" />
+              <p class="text-xs md:text-lg">Wajib Ikut Seminar</p>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-500">
+              <img src="images/cross.svg" alt="" class="w-4" />
+              <p class="text-xs md:text-lg">Biaya Gudang</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="
+          max-w-6xl
+          mx-auto
+          px-10
+          md:px-4
+          py-4
+          md:py-10
+          text-center
+          space-y-14
+        "
+      >
+        <h1 class="font-extrabold md:text-2xl text-xl">
+          Pilihan Produk Unik Dengan Harga Termurah Yang Dapat Kamu Temukan Di
+          <span class="text-red-600">LapakChina</span>
+        </h1>
+
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="images/LC_Alat Olahraga-02.png" alt="" srcset="" />
+          </div>
+          <div class="item">
+            <img src="images/LC_Alat Olahraga-03.png" alt="" srcset="" />
+          </div>
+          <div class="item">
+            <img src="images/LC_Alat Olahraga-04.png" alt="" srcset="" />
+          </div>
+          <div class="item">
+            <img src="images/LC_Alat Olahraga-05.png" alt="" srcset="" />
+          </div>
+          <div class="item">
+            <img src="images/LC_Alat Olahraga-06.png" alt="" srcset="" />
+          </div>
+          <div class="item">
+            <img src="images/LC_Alat Olahraga-07.png" alt="" srcset="" />
+          </div>
+          <div class="item">
+            <img src="images/LC_Alat Olahraga-08.png" alt="" srcset="" />
+          </div>
+          <div class="item">
+            <img src="images/LC_Alat Olahraga-09.png" alt="" srcset="" />
+          </div>
+          <div class="item">
+            <img src="images/Alat Dapur-02.png" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="
+          max-w-6xl
+          mx-auto
+          px-10
+          md:px-4
+          py-4
+          md:py-10
+          text-center
+          space-y-14
+        "
+      >
+        <div
+          class="p-4 rounded-lg space-y-4 pb-10 flex flex-col md:flex-row"
+          style="background-color: rgba(255, 0, 11, 0.03)"
+        >
+          <div class="md:w-6/12 flex justify-center">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/IMG_5011_LandingPage.png?v=1630664302"
+              class="w-60"
+              style="z-index: 99"
+              alt=""
+            />
+          </div>
+          <div class="md:w-6/12 md:text-left text-center space-y-3">
+            <h3 class="font-black text-sm md:text-2xl">
+              Ayo, Mulai Belanja Produk Impor China Sekarang!
+            </h3>
+            <p class="text-xs md:text-lg">
+              Semua bisa berbelanja produk impor China layaknya importir
+              profesional dengan Aplikasi
+              <span class="text-red-600 font-bold">LapakChina</span>. Tanpa
+              perlu Pengalaman. Tanpa harus bingung. Tinggal terima beres.
+            </p>
+            <div
+              class="
+                flex
+                justify-center
+                md:justify-start md:mt-1 md:-ml-4
+                -space-x-4
+              "
+            >
+              <div>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.lapak.china"
+                  target="_blank"
+                  ><img
+                    src="images/gplay.png"
+                    class="object-cover w-20 md:w-44"
+                    alt=""
+                /></a>
+              </div>
+              <div>
+                <a href="" target="_blank">
+                  <img
+                    src="images/appstore.png"
+                    class="object-cover w-20 md:w-44"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-red-600">
+      <div
+        class="
+          max-w-6xl
+          mx-auto
+          px-10
+          md:px-4
+          py-8
+          flex flex-col-reverse
+          md:flex-row
+          items-center
+          md:justify-between
+          justify-center
+        "
+      >
+        <p
+          class="
+            text-white
+            md:text-md
+            text-sm text-center
+            md:text-left
+            mt-3
+            md:mt-0
+          "
+        >
+          © Copyright 2021 LapakChina. All Rights Reserved.
+        </p>
+        <div class="flex items-center space-x-5">
+          <a href="https://www.facebook.com/lapakchina.id"
+            ><img src="images/fb.png" alt="" target="_blank" class="w-6"
+          /></a>
+          <a href="https://www.tiktok.com/@lapakchina.id?"
+            ><img src="images/tk.png" alt="" target="_blank" class="w-6"
+          /></a>
+          <a href="https://www.instagram.com/lapakchina.id/"
+            ><img src="images/ig.png" alt="" target="_blank" class="w-6"
+          /></a>
+          <a href="https://www.youtube.com/channel/UCCv-clTyeo9qjY5MZaE93_w"
+            ><img src="images/yt.png" alt="" target="_blank" class="w-7"
+          /></a>
+          <a href="https://www.linkedin.com/company/lapak-china"
+            ><img src="images/in.png" alt="" target="_blank" class="w-7"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="text/javascript">
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        items: 5,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [1000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+    </script>
+
+    <!-- Resource jQuery -->
+  </body>
+</html>
