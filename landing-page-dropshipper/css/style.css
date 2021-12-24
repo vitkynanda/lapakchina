@@ -3,7 +3,30 @@
 Primary style
 
 -------------------------------- */
-*,
+@font-face {
+  font-family: "ProximaSansMedium";
+  src: url("ProximaSansMedium.ttf");
+}
+
+@font-face {
+  font-family: "ProximaSansRegular";
+  src: url("ProximaSansRegular.ttf");
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("ProximaNova-Bold.woff");
+}
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: url("ProximaNova-Regular.woff");
+}
+
+html,
+body {
+  font-family: "ProximaNovaRegular";
+}
+
 *::after,
 *::before {
   -webkit-box-sizing: border-box;

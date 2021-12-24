@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M3VXKGQ");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,12 +26,6 @@
       integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -37,15 +46,19 @@
     <!-- Resource style -->
     <script src="js/modernizr.js"></script>
     <!-- Modernizr -->
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-    </style>
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M3VXKGQ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Navbar goes here -->
     <nav class="bg-white shadow-lg">
       <div class="max-w-6xl mx-auto px-4">
@@ -60,8 +73,11 @@
               />
             </a>
           </div>
-          <div class="hidden md:flex items-center space-x-8">
-            <div class="md:flex items-center space-x-1">
+          <div
+            class="hidden md:flex items-center space-x-8"
+            style="font-family: ProximaSansRegular"
+          >
+            <div class="md:flex items-center space-x-1 text-lg">
               <a
                 href="about.html"
                 class="
@@ -70,7 +86,6 @@
                   text-gray-500
                   visited:text-red-600 visited:border-b-4 visited:border-b-4
                   border-red-500
-                  font-semibold
                   hover:text-red-600
                   transition
                   duration-300
@@ -83,7 +98,6 @@
                   py-4
                   px-2
                   text-gray-500
-                  font-semibold
                   hover:text-red-600
                   transition
                   duration-300
@@ -91,7 +105,7 @@
                 >Blog</a
               >
             </div>
-            <div class="space-x-1">
+            <div class="space-x-1 text-lg">
               <a
                 href="https://play.google.com/store/apps/details?id=com.lapak.china"
                 class="
@@ -143,20 +157,13 @@
         </div>
       </div>
       <!-- mobile menu -->
-      <div class="hidden mobile-menu">
+      <div
+        class="hidden mobile-menu text-gray-500"
+        style="font-family: ProximaSansRegular"
+      >
         <ul class="">
           <li class="active">
-            <a
-              href="about.html"
-              class="
-                block
-                text-sm
-                px-2
-                py-4
-                text-white
-                bg-red-600
-                font-semibold
-              "
+            <a href="about.html" class="block px-2 py-4 text-white bg-red-600"
               >Tentang Kami</a
             >
           </li>
@@ -165,7 +172,6 @@
               href="https://blog.lapakchina.com"
               class="
                 block
-                text-sm
                 px-2
                 py-4
                 hover:bg-red-600 hover:text-white
@@ -180,7 +186,6 @@
               href="https://play.google.com/store/apps/details?id=com.lapak.china"
               class="
                 block
-                text-sm
                 px-2
                 py-4
                 hover:bg-red-600 hover:text-white
@@ -195,7 +200,6 @@
               href="https://play.google.com/store/apps/details?id=com.lapak.china"
               class="
                 block
-                text-sm
                 px-2
                 py-4
                 hover:bg-red-600 hover:text-white
@@ -211,16 +215,14 @@
 
     <section>
       <div class="max-w-6xl mx-auto p-4 flex flex-col sm:flex-row">
-        <div class="md:w-6/12 md:py-10">
+        <div class="md:w-6/12 md:py-10" style="font-family: ProximaNovaBold">
           <!-- <section class="cd-intro"> -->
           <h1
-            class="md:hidden font-bold cd-headline slide text-center w-full"
+            class="md:hidden cd-headline slide text-center w-full"
             style="line-height: 5rem"
           >
-            <span class="md:text-3xl text-xl">Belanja Impor China untuk</span>
-            <div
-              class="cd-words-wrapper md:text-3xl text-red-600 text-xl w-full"
-            >
+            <span class="text-3xl">Belanja Impor China untuk</span>
+            <div class="cd-words-wrapper text-3xl text-red-600 w-full">
               <b class="is-visible w-full">Semua</b>
               <b class="w-full">Wirausahawan</b>
               <b class="w-full">Karyawan</b>
@@ -230,10 +232,10 @@
           </h1>
           <!-- </section> -->
           <h1 class="hidden md:block cd-headline slide is-full-width">
-            <span class="md:text-3xl font-bold ml-3">Belanja Impor China</span>
+            <span class="md:text-5xl ml-3">Belanja Impor China</span>
             <div class="flex space-x-4">
-              <span class="md:text-3xl font-bold ml-3">untuk</span>
-              <span class="cd-words-wrapper md:text-3xl font-bold text-red-600">
+              <span class="md:text-5xl ml-3">untuk</span>
+              <span class="cd-words-wrapper md:text-5xl text-red-600">
                 <b class="is-visible">Semua</b>
                 <b>Wirausahawan</b>
                 <b>Karyawan</b>
@@ -242,30 +244,28 @@
               </span>
             </div>
           </h1>
-          <h6
+          <p
             class="
               text-center
-              md:text-left
-              text-md
-              md:text-md md:-ml-1
-              lg:text-lg
+              md:text-left md:-ml-1 md:text-2xl
+              text-lg
               p-4
               md:mt-0
-              -mt-5
+              -mt-10
               mb-10
               text-gray-500
             "
-            style="line-height: 2.2rem; font-weight: 300"
+            style="font-family: ProximaNovaRegular"
           >
             Nikmati Belanja Produk Impor China Paling Mudah dan Aman Pakai
-            Aplikasi <strong>LapakChina</strong>.
-          </h6>
+            Aplikasi <span>LapakChina</span>.
+          </p>
           <div
             class="
               flex
               justify-center
               md:justify-start
-              -mt-8
+              -mt-10
               md:-space-x-4 md:mb-0
               mb-2
               md:-ml-1
@@ -277,15 +277,7 @@
                 target="_blank"
                 ><img
                   src="images/gplay.png"
-                  class="object-cover w-32 md:w-44"
-                  alt=""
-              /></a>
-            </div>
-            <div>
-              <a href="" target="_blank">
-                <img
-                  src="images/appstore.png"
-                  class="object-cover w-32 md:w-44"
+                  class="hidden md:block object-cover md:w-48"
                   alt=""
               /></a>
             </div>
@@ -300,15 +292,26 @@
           />
         </div>
       </div>
+
+      <div class="flex justify-center tracking-konsultasi">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.lapak.china"
+          target="_blank"
+          ><img
+            src="images/gplay.png"
+            class="md:hidden object-cover w-48 tracking-konsultasi"
+            alt=""
+        /></a>
+      </div>
       <div
         class="
           bg-gradient-to-b
           from-white
           to-red-200
           h-24
-          md:-mt-8
-          rounded-b-2xl
-          -mt-18
+          md:-mt-12
+          rounded-b-3xl
+          -mt-20
         "
       ></div>
     </section>
@@ -341,11 +344,9 @@
               rounded-md
             "
           >
-            <p class="text-xs">Aplikasi Belanja Impor</p>
-            <p class="text-sm font-extrabold text-red-600 md:text-xl">
-              Pertama
-            </p>
-            <p class="text-sm font-extrabold">di Indonesia</p>
+            <p>Aplikasi Belanja Impor</p>
+            <p class="text-red-600 md:text-xl font-bold">Pertama</p>
+            <p class="font-bold">di Indonesia</p>
           </div>
           <div
             class="
@@ -360,11 +361,9 @@
               rounded-md
             "
           >
-            <p class="text-xs">Pionir Belanja Impor</p>
-            <p class="text-sm font-extrabold text-red-600 md:text-xl">
-              Grosir & Satuan
-            </p>
-            <p class="text-sm font-extrabold">Tanpa Minimum Order</p>
+            <p>Pionir Belanja Impor</p>
+            <p class="text-red-600 md:text-xl font-bold">Grosir & Satuan</p>
+            <p class="font-bold">Tanpa Minimum Order</p>
           </div>
           <div
             class="
@@ -379,9 +378,9 @@
               rounded-md
             "
           >
-            <p class="text-xs">Akses</p>
-            <p class="text-sm font-extrabold text-red-600 md:text-xl">24 Jam</p>
-            <p class="text-sm font-extrabold">Tidak Hanya Di Jam Kerja</p>
+            <p>Akses</p>
+            <p class="text-red-600 md:text-xl font-bold">24 Jam</p>
+            <p class="font-bold">Tidak Hanya Di Jam Kerja</p>
           </div>
           <div
             class="
@@ -396,19 +395,19 @@
               rounded-md
             "
           >
-            <p class="text-xs">Banyak Pilihan</p>
-            <p class="text-sm font-extrabold text-red-600 md:text-xl">
+            <p>Banyak Pilihan</p>
+            <p class="text-red-600 md:text-xl font-bold">
               Metode Pembayaran digital
             </p>
-            <p class="text-sm font-extrabold">Dijamin Aman</p>
+            <p class="font-bold">Dijamin Aman</p>
           </div>
         </div>
         <div class="mt-10 space-y-5 text-center">
-          <h1 class="md:text-3xl text-xl font-extrabold">
+          <h1 class="md:text-4xl text-xl font-bold">
             Keunggulan Belanja Impor di
-            <span class="text-red-600 font-bold">LapakChina</span>
+            <span class="text-red-600">LapakChina</span>
           </h1>
-          <p>
+          <p class="md:text-lg text-gray-500">
             LapakChina membantu semua kalangan untuk berbelanja produk Impor
             China tanpa perlu pengalaman.
           </p>
@@ -420,7 +419,7 @@
       <div
         class="
           h-full
-          max-w-6xl
+          max-w-5xl
           mx-auto
           md:px-4
           p-10
@@ -430,15 +429,21 @@
           space-y-10
         "
       >
-        <h1 class="md:text-3xl text-xl md:text-left text-center font-extrabold">
+        <h1 class="md:text-3xl text-xl text-center font-bold">
           Perbedaan Belanja Impor di Aplikasi
           <span class="text-red-600">LapakChina</span> dengan Jasa Impor Lain
         </h1>
-        <div class="grid grid-cols-2 md:gap-20 gap-3">
+        <div
+          class="grid grid-cols-2 md:gap-20 gap-3"
+          style="font-family: ProximaSansRegular"
+        >
           <div
             class="bg-white md:p-10 p-3 rounded-md space-y-3 mb-10 shadow-lg"
           >
-            <h1 class="md:text-2xl text-xs mb-5 font-semibold text-center">
+            <h1
+              class="md:text-2xl text-xs mb-5 text-center"
+              style="font-family: ProximaSansMedium"
+            >
               Aplikasi
               <span class="text-red-600 md:text-2xl text-xs">LapakChina</span>
             </h1>
@@ -466,7 +471,10 @@
           <div
             class="bg-white md:p-10 p-3 rounded-md space-y-3 mb-10 shadow-lg"
           >
-            <h1 class="md:text-2xl text-xs mb-5 font-semibold text-center">
+            <h1
+              class="md:text-2xl text-xs mb-5 text-center"
+              style="font-family: ProximaSansMedium"
+            >
               Tempat Belanja Impor Lain
             </h1>
             <div class="flex items-center space-x-2 text-gray-500">
@@ -500,20 +508,20 @@
           max-w-6xl
           mx-auto
           px-10
-          md:px-4
-          py-4
-          md:py-10
+          md:px-4 md:py-10
+          py-10
           text-center
-          space-y-14
+          space-y-0
+          md:space-y-8
+          relative
         "
       >
-        <h1 class="font-extrabold md:text-2xl text-lg">
+        <h1 class="md:text-3xl text-xl font-bold">
           Pilihan Produk Unik Dengan Harga Termurah Yang Dapat Kamu Temukan Di
           <span class="text-red-600">LapakChina</span>
         </h1>
 
-        <!-- 
-        <div class="owl-carousel owl-theme">
+        <div class="owl-carousel md:px-20 px-12 pt-5">
           <div class="item">
             <img src="images/LC_Alat Olahraga-02.png" alt="" />
           </div>
@@ -562,12 +570,61 @@
           <div class="item">
             <img src="images/PRODUK IMLEK-05.png" alt="" />
           </div>
-        </div> -->
+        </div>
 
-        <!-- <div class="slider_nav">
-          <button class="am-next">Next</button>
-          <button class="am-prev">Previous</button>
-        </div> -->
+        <div
+          class="
+            prev-owl-button
+            bg-white
+            shadow-lg
+            p-4
+            rounded-full
+            w-10
+            h-10
+            flex
+            items-center
+            absolute
+            top-24
+            left-0
+          "
+        >
+          <img src="images/arrowleft.svg" alt="" class="w-2" />
+        </div>
+        <div
+          class="
+            bg-white
+            shadow-lg
+            p-4
+            rounded-full
+            w-10
+            h-10
+            flex
+            items-center
+            next-owl-button
+            absolute
+            md:top-24
+            top-24
+            right-0
+          "
+        >
+          <img src="images/arrowright.svg" alt="" class="w-2" />
+        </div>
+
+        <button
+          class="
+            -mt-10
+            shadow-lg
+            md:py-2
+            py-3
+            px-5
+            rounded-lg
+            md:text-xl
+            text-white
+            bg-red-600
+          "
+        >
+          Jelajahi Jutaan Produk Lainnnya Disini
+        </button>
       </div>
     </section>
 
@@ -579,128 +636,189 @@
         items-center
         max-w-6xl
         mx-auto
-        px-10
         md:px-4
-        py-4
-        md:py-10
         text-center
         space-y-14
       "
     >
+      <h1 class="md:text-3xl text-xl font-bold mt-2">
+        Apa Kata Mereka Tentang <span class="text-red-600">LapakChina</span> ?
+      </h1>
       <div class="container">
         <div class="swiper-container mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="img/01.jpg" alt="" />
-              <div class="card-description">
-                <div class="card-title">
-                  <h4>Descripción</h4>
+            <div class="swiper-slide shadow-lg">
+              <div class="p-5">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="images/fransisca.jpg"
+                    alt=""
+                    class="rounded-full w-20 h-20 object-cover"
+                  />
+                  <div class="text-sm space-y-1">
+                    <p class="text-lg font-bold">Fransisca Juliany</p>
+                    <p class="font-light">Business Consultant</p>
+                  </div>
                 </div>
-                <div class="card-text">
+                <div
+                  class="
+                    card-text
+                    text-sm text-center
+                    h-48
+                    flex flex-col
+                    justify-center
+                  "
+                >
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                    enim possimus dolorum non, modi sunt ips.
+                    Top Aplikasi LapakChina, ngalamin beli barang impor ribet
+                    harus ada minimum belanjanya. Pas liat iklan, ada Aplikasi
+                    LapakChina yang bisa beli barang impor satuan. Langsung move
+                    on aku dan bagusnya bayarnya ga ribet, pelayanan ramah pula.
                   </p>
-                </div>
-                <div class="card-link">
-                  <a href="#">Ver más</a>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <img src="img/02.jpg" alt="" />
-              <div class="card-description">
-                <div class="card-title">
-                  <h4>Descripción</h4>
+            <div class="swiper-slide shadow-lg">
+              <div class="p-5">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="images/fadil.jpg"
+                    alt=""
+                    class="rounded-full w-20 h-20 object-cover"
+                  />
+                  <div class="text-sm space-y-1">
+                    <p class="text-lg font-bold">Fadhil Faturrachman</p>
+                    <p class="font-light">Senior Officer</p>
+                  </div>
                 </div>
-                <div class="card-text">
+                <div
+                  class="
+                    card-text
+                    text-sm text-center
+                    h-48
+                    flex flex-col
+                    justify-center
+                  "
+                >
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                    enim possimus dolorum non, modi sunt ips.
+                    Pelayanan ramah, harga terjangkau, kualitas barang bagus.
+                    Pembayaran mudah. Sukses terus LapakChina
                   </p>
-                </div>
-                <div class="card-link">
-                  <a href="#">Ver más</a>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <img src="img/03.jpg" alt="" />
-              <div class="card-description">
-                <div class="card-title">
-                  <h4>Descripción</h4>
+            <div class="swiper-slide shadow-lg">
+              <div class="p-5">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="images/elvan.jpg"
+                    alt=""
+                    class="rounded-full w-20 h-20 object-cover"
+                  />
+                  <div class="text-sm space-y-1">
+                    <p class="text-lg font-bold">Elvan Martin</p>
+                    <p class="font-light">Business Owner</p>
+                  </div>
                 </div>
-                <div class="card-text">
+                <div
+                  class="
+                    card-text
+                    text-sm text-center
+                    h-48
+                    flex flex-col
+                    justify-center
+                  "
+                >
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                    enim possimus dolorum non, modi sunt ips.
+                    Awalnya ga tau Aplikasi LapakChina itu apa, pas temen order
+                    barang impornya sesuai pesanan dan terpercaya. Alhamdulillah
+                    pas saya order juga, barang impor pesanan saya no minus. Thx
+                    LapakChina.
                   </p>
-                </div>
-                <div class="card-link">
-                  <a href="#">Ver más</a>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <img src="img/04.jpg" alt="" />
-              <div class="card-description">
-                <div class="card-title">
-                  <h4>Descripción</h4>
+            <div class="swiper-slide shadow-lg">
+              <div class="p-5">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="images/jeni.jpg"
+                    alt=""
+                    class="rounded-full w-20 h-20 object-cover"
+                  />
+                  <div class="text-sm space-y-1">
+                    <p class="text-lg font-bold">Jeni Amalia</p>
+                    <p
+                      class="font-light"
+                      style="font-family: ProximaSansRegular"
+                    >
+                      Banker
+                    </p>
+                  </div>
                 </div>
-                <div class="card-text">
+                <div
+                  class="
+                    card-text
+                    text-sm text-center
+                    h-48
+                    flex flex-col
+                    justify-center
+                  "
+                  style="font-family: ProximaSansRegular"
+                >
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                    enim possimus dolorum non, modi sunt ips.
+                    Baru pertama kali order mainan buat anak di Aplikasi
+                    LapakChina, waktu sampai barangnya sesuai dan tidak ada
+                    kekurangan sedikit pun. Good product.
                   </p>
-                </div>
-                <div class="card-link">
-                  <a href="#">Ver más</a>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <img src="img/05.jpg" alt="" />
-              <div class="card-description">
-                <div class="card-title">
-                  <h4>Descripción</h4>
+            <div class="swiper-slide shadow-lg">
+              <div class="p-5">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="images/rima.jpg"
+                    alt=""
+                    class="w-20 h-20 object-cover rounded-full"
+                  />
+                  <div class="text-sm space-y-1">
+                    <p class="text-lg font-bold">Rima Paramita</p>
+                    <p
+                      class="font-light"
+                      style="font-family: ProximaSansRegular"
+                    >
+                      Nurse
+                    </p>
+                  </div>
                 </div>
-                <div class="card-text">
+                <div
+                  class="
+                    card-text
+                    text-sm text-center
+                    h-48
+                    flex flex-col
+                    justify-center
+                  "
+                  style="font-family: ProximaSansRegular"
+                >
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                    enim possimus dolorum non, modi sunt ips.
+                    Tampilan kayak di marketplace Indo. Gampang diakses, harga
+                    sesuai kualitas. Aku beli alat pijat untuk mata sesuai
+                    pesanan. Bintang 5 buat LapakChina.
                   </p>
-                </div>
-                <div class="card-link">
-                  <a href="#">Ver más</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="img/06.jpg" alt="" />
-              <div class="card-description">
-                <div class="card-title">
-                  <h4>Descripción</h4>
-                </div>
-                <div class="card-text">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                    enim possimus dolorum non, modi sunt ips.
-                  </p>
-                </div>
-                <div class="card-link">
-                  <a href="#">Ver más</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="w-full flex justify-center relative">
-        <div class="flex items-center absolute">
+      <div class="w-full flex justify-center relative -mt-5">
+        <div class="flex items-center absolute -top-9">
           <div
             class="
-              mx-12
+              mx-14
+              md:mx-12
               prev-button
               bg-white
               shadow-lg
@@ -716,8 +834,8 @@
           </div>
           <div
             class="
-              mx-12
-              next-button
+              mx-14
+              md:mx-12
               bg-white
               shadow-lg
               p-4
@@ -726,12 +844,14 @@
               h-10
               flex
               items-center
+              next-button
             "
           >
             <img src="images/arrowright.svg" alt="" class="w-2" />
           </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
     </section>
 
     <section>
@@ -745,6 +865,7 @@
           md:py-10
           text-center
           space-y-14
+          mt-5
         "
       >
         <div
@@ -760,10 +881,13 @@
             />
           </div>
           <div class="md:w-6/12 md:text-left text-center space-y-3">
-            <h3 class="font-black text-sm md:text-2xl">
+            <h3 class="font-black text-md md:text-2xl">
               Ayo, Mulai Belanja Produk Impor China Sekarang!
             </h3>
-            <p class="text-xs md:text-lg text-gray-500">
+            <p
+              class="text-sm md:text-lg text-gray-500"
+              style="font-family: ProximaSansRegular"
+            >
               Semua bisa berbelanja produk impor China layaknya importir
               profesional dengan Aplikasi
               <span class="text-red-600 font-bold">LapakChina</span>. Tanpa
@@ -786,18 +910,31 @@
                     alt=""
                 /></a>
               </div>
-              <div>
-                <a href="" target="_blank">
-                  <img
-                    src="images/appstore.png"
-                    class="object-cover w-32 md:w-44"
-                    alt=""
-                /></a>
-              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <section class="fixed bottom-5 right-5" style="z-index: 99">
+      <a
+        href="https://wa.me/+6281210004668?text=Hi%20ASKA%2C%20Bisa%20Bantu%20saya%20untuk%20berbelanja%20impor%20China%20untuk%20keperluan%20usaha%20di%20aplikasi%20LapakChina%3F"
+      >
+        <div
+          class="
+            bg-green-500
+            text-white
+            px-5
+            py-3
+            flex
+            items-center
+            rounded-xl
+            space-x-3
+          "
+        >
+          <img src="images/wa.png" alt="" class="md:w-7 w-5" />
+          <p>Whatsapp</p>
+        </div>
+      </a>
     </section>
 
     <footer class="bg-red-600">
@@ -868,14 +1005,15 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
       var owl = $(".owl-carousel");
       owl.owlCarousel({
         items: 5,
         loop: true,
         margin: 10,
         autoplay: true,
-        navText: [$(".am-next"), $(".am-prev")],
+        nav: true,
+        navText: [$(".prev-owl-button"), $(".next-owl-button")],
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         responsiveClass: true,
@@ -887,7 +1025,7 @@
             items: 3,
           },
           1000: {
-            items: 5,
+            items: 4,
           },
         },
       });
@@ -897,7 +1035,7 @@
       $(".stop").on("click", function () {
         owl.trigger("stop.owl.autoplay");
       });
-    </script> -->
+    </script>
 
     <script>
       const btn = document.querySelector("button.mobile-menu-button");

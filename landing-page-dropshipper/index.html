@@ -12,20 +12,30 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="css/test.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M3VXKGQ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Navbar goes here -->
     <nav class="bg-white shadow-lg">
       <div class="max-w-6xl mx-auto px-4">
@@ -40,8 +50,11 @@
               />
             </a>
           </div>
-          <div class="hidden md:flex items-center space-x-8">
-            <div class="md:flex items-center space-x-1">
+          <div
+            class="hidden md:flex items-center space-x-8"
+            style="font-family: ProximaSansRegular"
+          >
+            <div class="md:flex items-center space-x-1 text-lg">
               <a
                 href="about.html"
                 class="
@@ -50,7 +63,6 @@
                   text-gray-500
                   visited:text-red-600 visited:border-b-4 visited:border-b-4
                   border-red-500
-                  font-semibold
                   hover:text-red-600
                   transition
                   duration-300
@@ -63,7 +75,6 @@
                   py-4
                   px-2
                   text-gray-500
-                  font-semibold
                   hover:text-red-600
                   transition
                   duration-300
@@ -71,7 +82,7 @@
                 >Blog</a
               >
             </div>
-            <div class="space-x-1">
+            <div class="space-x-1 text-lg">
               <a
                 href="https://play.google.com/store/apps/details?id=com.lapak.china"
                 class="
@@ -123,20 +134,13 @@
         </div>
       </div>
       <!-- mobile menu -->
-      <div class="hidden mobile-menu">
+      <div
+        class="hidden mobile-menu text-gray-500"
+        style="font-family: ProximaSansRegular"
+      >
         <ul class="">
           <li class="active">
-            <a
-              href="about.html"
-              class="
-                block
-                text-sm
-                px-2
-                py-4
-                text-white
-                bg-red-600
-                font-semibold
-              "
+            <a href="about.html" class="block px-2 py-4 text-white bg-red-600"
               >Tentang Kami</a
             >
           </li>
@@ -145,7 +149,6 @@
               href="https://blog.lapakchina.com"
               class="
                 block
-                text-sm
                 px-2
                 py-4
                 hover:bg-red-600 hover:text-white
@@ -160,7 +163,6 @@
               href="https://play.google.com/store/apps/details?id=com.lapak.china"
               class="
                 block
-                text-sm
                 px-2
                 py-4
                 hover:bg-red-600 hover:text-white
@@ -175,7 +177,6 @@
               href="https://play.google.com/store/apps/details?id=com.lapak.china"
               class="
                 block
-                text-sm
                 px-2
                 py-4
                 hover:bg-red-600 hover:text-white
@@ -189,12 +190,15 @@
       </div>
     </nav>
 
-    <section class="py-10 md:py-0">
-      <h1 class="md:hidden text-center text-xl md:text-3xl lg:text-4xl p-4">
-        <span class="font-semibold">Untung Ratusan Juta</span> Dengan Dropship
-        Barang Import China
+    <section class="py-10 md:py-0" style="font-family: ProximaNovaBold">
+      <h1
+        class="md:hidden text-center text-3xl p-4"
+        style="font-family: ProximaNovaBold"
+      >
+        <span class="font-semibold text-red-600">Untung Ratusan Juta</span>
+        Dengan Dropship Barang Import China
       </h1>
-      <div class="max-w-6xl mx-auto p-4 flex flex-col-reverse sm:flex-row">
+      <div class="max-w-6xl mx-auto p-4 flex flex-col md:flex-row">
         <div class="md:w-6/12 py-10">
           <h1
             class="hidden md:block text-2xl md:text-3xl text-xl lg:text-4xl p-4"
@@ -202,23 +206,26 @@
             <span class="font-semibold text-red-600">Untung Ratusan Juta</span>
             Dengan Dropship Barang Import China
           </h1>
-          <h6
+          <p
             class="
               text-center
               md:text-left
-              text-md
+              text-xl
               md:text-md
               lg:text-lg
-              p-4
+              md:p-4
+              -mt-12
+              md:mt-0
               text-gray-500
             "
+            style="font-family: ProximaNovaRegular"
           >
             Aplikasi yang bisa bantu kamu berbisnis
-            <span class="font-semibold">
+            <span class="font-bold">
               tanpa harus keluar modal, tanpa punya produk, tanpa stok produk,
               dan bahkan tanpa urus pengiriman!
             </span>
-          </h6>
+          </p>
           <div
             class="
               flex
@@ -231,19 +238,11 @@
               md:justify-start
             "
           >
-            <div>
+            <div class="hidden md:block">
               <a
                 href="https://play.google.com/store/apps/details?id=com.lapak.china"
               >
                 <img src="images/gplay.png" class="object-cover w-44" alt=""
-              /></a>
-            </div>
-            <div>
-              <a href=""
-                ><img
-                  src="images/appstore.png"
-                  class="object-cover w-44"
-                  alt=""
               /></a>
             </div>
           </div>
@@ -256,6 +255,11 @@
             alt=""
           />
         </div>
+      </div>
+      <div class="flex justify-center md:hidden">
+        <a href="https://play.google.com/store/apps/details?id=com.lapak.china">
+          <img src="images/gplay.png" class="object-cover w-44" alt=""
+        /></a>
       </div>
       <div
         class="
@@ -276,10 +280,9 @@
           max-w-6xl
           mx-auto
           px-4
-          md:px-4 md:py-20
-          py-14
+          md:px-4 md:py-20 md:py-14
           text-center
-          space-y-14
+          md:space-y-14
         "
       >
         <div
@@ -298,44 +301,43 @@
             Kenapa Dropship di Aplikasi
             <span class="text-red-600">LapakChina</span> Bukan di Tempat Lain?
           </h2>
-          <div class="grid md:grid-cols-2 md:gap-20 gap-2">
+
+          <div
+            class="grid grid-cols-2 md:gap-20 gap-3"
+            style="font-family: ProximaSansRegular"
+          >
             <div
-              class="
-                bg-white
-                md:p-10
-                p-3
-                rounded-md
-                space-y-3
-                mb-10
-                shadow-lg
-                rounded-lg
-              "
+              class="bg-white md:p-10 p-3 rounded-md space-y-3 mb-10 shadow-lg"
             >
-              <h3 class="md:text-2xl text-md mb-5 font-semibold text-center">
-                Dropship di <span class="text-red-600">LapakChina</span>
-              </h3>
-              <div class="flex items-center space-x-2">
-                <img src="images/check.svg" alt="" class="w-5" />
+              <h1
+                class="md:text-2xl text-xs mb-5 text-center"
+                style="font-family: ProximaSansMedium"
+              >
+                Dropship di
+                <span class="text-red-600 md:text-2xl text-xs">LapakChina</span>
+              </h1>
+              <div class="flex items-center space-x-2 text-gray-500">
+                <img src="images/check.svg" alt="" class="w-4" />
                 <p class="text-xs md:text-lg text-left">
                   Jutaan Pilihan Produk Unik yang Tidak Ada di Indonesia
                 </p>
               </div>
-              <div class="flex items-center space-x-2">
-                <img src="images/check.svg" alt="" class="w-5" />
+              <div class="flex items-center space-x-2 text-gray-500">
+                <img src="images/check.svg" alt="" class="w-4" />
                 <p class="text-xs md:text-lg text-left">
                   Untung Hingga 200% Tanpa Mikirin Perang Harga
                 </p>
               </div>
-              <div class="flex items-center space-x-2">
-                <img src="images/check.svg" alt="" class="w-5" />
+              <div class="flex items-center space-x-2 text-gray-500">
+                <img src="images/check.svg" alt="" class="w-4" />
                 <p class="text-xs md:text-lg text-left">Gratis Biaya Member</p>
               </div>
-              <div class="flex items-center space-x-2">
-                <img src="images/check.svg" alt="" class="w-5" />
+              <div class="flex items-center space-x-2 text-gray-500">
+                <img src="images/check.svg" alt="" class="w-4" />
                 <p class="text-xs md:text-lg text-left">Gak Perlu Seminar</p>
               </div>
-              <div class="flex items-center space-x-2">
-                <img src="images/check.svg" alt="" class="w-5" />
+              <div class="flex items-center space-x-2 text-gray-500">
+                <img src="images/check.svg" alt="" class="w-4" />
                 <p class="text-xs md:text-lg text-left">
                   Transaksi Melalui Aplikasi
                 </p>
@@ -350,35 +352,36 @@
                 space-y-3
                 mb-10
                 shadow-lg
-                rounded-lg
+                text-left
               "
             >
-              <h3 class="md:text-2xl text-md mb-5 font-semibold text-center">
+              <h1
+                class="md:text-2xl text-xs mb-5 text-center"
+                style="font-family: ProximaSansMedium"
+              >
                 Dropship di Tempat Lain
-              </h3>
-              <div class="flex items-center space-x-2">
-                <img src="images/cross.svg" alt="" class="w-5" />
-                <p class="text-xs md:text-lg text-left">
-                  Pilihan Produk Terbatas
-                </p>
+              </h1>
+              <div class="flex items-center space-x-2 text-gray-500">
+                <img src="images/cross.svg" alt="" class="w-4" />
+                <p class="text-xs md:text-lg">Pilihan Produk Terbatas</p>
               </div>
-              <div class="flex items-center space-x-2">
-                <img src="images/cross.svg" alt="" class="w-5" />
-                <p class="text-xs md:text-lg text-left">
+              <div class="flex items-center space-x-2 text-gray-500">
+                <img src="images/cross.svg" alt="" class="w-4" />
+                <p class="text-xs md:text-lg">
                   Untung Tipis Karena Perang Harga Sesama Member
                 </p>
               </div>
-              <div class="flex items-center space-x-2">
-                <img src="images/cross.svg" alt="" class="w-5" />
-                <p class="text-xs md:text-lg text-left">Harus Bayar Member</p>
+              <div class="flex items-center space-x-2 text-gray-500">
+                <img src="images/cross.svg" alt="" class="w-4" />
+                <p class="text-xs md:text-lg">Harus Bayar Member</p>
               </div>
-              <div class="flex items-center space-x-2">
-                <img src="images/cross.svg" alt="" class="w-5" />
-                <p class="text-xs md:text-lg text-left">Wajib Ikut Seminar</p>
+              <div class="flex items-center space-x-2 text-gray-500">
+                <img src="images/cross.svg" alt="" class="w-4" />
+                <p class="text-xs md:text-lg">Wajib Ikut Seminar</p>
               </div>
-              <div class="flex items-center space-x-2">
-                <img src="images/cross.svg" alt="" class="w-5" />
-                <p class="text-xs md:text-lg text-left">Transaksi Manual</p>
+              <div class="flex items-center space-x-2 text-gray-500">
+                <img src="images/cross.svg" alt="" class="w-4" />
+                <p class="text-xs md:text-lg">Transaksi Manual</p>
               </div>
             </div>
           </div>
@@ -391,8 +394,8 @@
         <h2 class="md:text-3xl text-xl font-semibold">
           Langkah-Langkah Bisnis Dropship
         </h2>
-        <div class="grid md:grid-cols-4 gap-10">
-          <div class="rounded-lg bg-white h-56 shadow-lg">
+        <div class="grid md:grid-cols-4 md:gap-10 gap-5 px-10">
+          <div class="rounded-lg bg-white h-48 shadow-lg">
             <div
               class="
                 h-12
@@ -422,13 +425,20 @@
               </div>
             </div>
             <div
-              class="flex flex-col space-y-2 items-center justify-center p-5"
+              class="
+                flex flex-col
+                space-y-2
+                items-center
+                justify-center
+                p-5
+                h-32
+              "
             >
               <h3 class="font-semibold">Upload Produk ke Tokomu</h3>
               <p>Cari Produk yang ingin kamu Jual</p>
             </div>
           </div>
-          <div class="rounded-lg bg-white h-56 shadow-lg">
+          <div class="rounded-lg bg-white h-48 shadow-lg">
             <div
               class="
                 h-12
@@ -458,13 +468,20 @@
               </div>
             </div>
             <div
-              class="flex flex-col space-y-2 items-center justify-center p-5"
+              class="
+                flex flex-col
+                space-y-2
+                items-center
+                justify-center
+                p-5
+                h-32
+              "
             >
               <h3 class="font-semibold">Customer Buat Pesanan</h3>
               <p>Customer membeli barang dari toko online kamu</p>
             </div>
           </div>
-          <div class="rounded-lg bg-white h-56 shadow-lg">
+          <div class="rounded-lg bg-white h-48 shadow-lg">
             <div
               class="
                 h-12
@@ -494,13 +511,20 @@
               </div>
             </div>
             <div
-              class="flex flex-col space-y-2 items-center justify-center p-5"
+              class="
+                flex flex-col
+                space-y-2
+                items-center
+                justify-center
+                p-5
+                h-32
+              "
             >
               <h3 class="font-semibold">Dropshipper Meneruskan Pesanan</h3>
               <p>Kamu meneruskan pesanan ke Aplikasi LapakChina</p>
             </div>
           </div>
-          <div class="rounded-lg bg-white h-56 shadow-lg">
+          <div class="rounded-lg bg-white h-48 shadow-lg">
             <div
               class="
                 h-12
@@ -530,7 +554,14 @@
               </div>
             </div>
             <div
-              class="flex flex-col space-y-2 items-center justify-center p-5"
+              class="
+                flex flex-col
+                space-y-2
+                items-center
+                justify-center
+                p-5
+                h-32
+              "
             >
               <h3 class="font-semibold">LapakChina Kirim Barang ke Customer</h3>
               <p>Menggunakan toko online kamu</p>
@@ -638,32 +669,274 @@
       </div>
     </section>
 
-    <section class="bg-red-600">
+    <section
+      class="
+        relative
+        flex flex-col
+        justify-center
+        items-center
+        max-w-5xl
+        mx-auto
+        md:px-4
+        text-center
+        space-y-14
+      "
+    >
+      <h1 class="md:text-3xl text-xl font-bold mt-2">
+        Apa Kata Dropshipper <span class="text-red-600">LapakChina</span> ?
+      </h1>
+      <div class="container">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide shadow-lg">
+              <div class="p-4">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="images/fransisca.jpg"
+                    alt=""
+                    class="rounded-full w-20 h-20 object-cover"
+                  />
+                  <div class="text-sm space-y-1">
+                    <p class="text-lg font-bold">Kevin Lim</p>
+                    <p class="font-light">Contractor & Business Owner</p>
+                  </div>
+                </div>
+                <div
+                  class="
+                    card-text
+                    text-sm text-center
+                    flex flex-col
+                    h-56
+                    justify-center
+                  "
+                >
+                  <p>
+                    LapakChina adalah jalan ninja saya buat dropship
+                    barang-barang langka di marketplace Indonesia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide shadow-lg">
+              <div class="p-4">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="images/intan.jpg"
+                    alt=""
+                    class="rounded-full w-20 h-20 object-cover"
+                  />
+                  <div class="text-sm space-y-1">
+                    <p class="text-lg font-bold">Intan Novhela</p>
+                    <p class="font-light">Business Owner</p>
+                  </div>
+                </div>
+                <div
+                  class="
+                    card-text
+                    text-sm text-center
+                    flex flex-col
+                    h-56
+                    justify-center
+                  "
+                >
+                  <p>
+                    Terima kasih LapakChina. Bisa pilih produk yang keren-keren
+                    sesuai keinginan aku. Jadi makin pede deh dropship produk
+                    yang benar-benar aku suka. Cuannya bisa atur sendiri tanpa
+                    takut perang harga sama kompetitor.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide shadow-lg">
+              <div class="p-4">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="images/christine.jpg"
+                    alt=""
+                    class="rounded-full w-20 h-20 object-cover"
+                  />
+                  <div class="text-sm space-y-1">
+                    <p class="text-lg font-bold">Christine Michelle</p>
+                    <p class="font-light">Officer & Online Seller</p>
+                  </div>
+                </div>
+                <div
+                  class="
+                    card-text
+                    text-sm text-center
+                    flex
+                    h-56
+                    flex-col
+                    justify-center
+                  "
+                >
+                  <p>
+                    Pilihan produknya banyak banget, jadi kalau ada
+                    produk-produk yang baru hits aku langsung cari di LapakChina
+                    terus pasarin di marketplace atau bikin Pre Order. Jadi cuan
+                    deh :)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide shadow-lg">
+              <div class="p-4">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="images/hendri.jpg"
+                    alt=""
+                    class="rounded-full w-20 h-20 object-cover"
+                  />
+                  <div class="text-sm space-y-1">
+                    <p class="text-lg font-bold">Hendry Pratama</p>
+                    <p
+                      class="font-light"
+                      style="font-family: ProximaSansRegular"
+                    >
+                      Fresh Graduate & Online Seller
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="
+                    card-text
+                    text-sm text-center
+                    flex flex-col
+                    h-56
+                    justify-center
+                  "
+                  style="font-family: ProximaSansRegular"
+                >
+                  <p>
+                    Awalnya cuma beli barang impor China buat diri sendiri
+                    karena gaada di Indonesia, karena belanja di Aplikasi
+                    LapakChina mudah banget. Aku iseng posting di akun seller
+                    marketplace pakai sistem Pre Order, eh ternyata laku jugaa!
+                    keterusan deh sampai sekarang dropship dari LapakChina.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide shadow-lg">
+              <div class="p-5">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="images/diandra.jpg"
+                    alt=""
+                    class="w-20 h-20 object-cover rounded-full"
+                  />
+                  <div class="text-sm space-y-1">
+                    <p class="text-lg font-bold">Diandra Clarisa</p>
+                    <p
+                      class="font-light"
+                      style="font-family: ProximaSansRegular"
+                    >
+                      Business Owner
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="
+                    card-text
+                    text-sm text-center
+                    flex flex-col
+                    h-56
+                    justify-center
+                  "
+                  style="font-family: ProximaSansRegular"
+                >
+                  <p>
+                    Aku compare buat dropship barang di sebelah sama di
+                    LapakChina ternyata disini barangnya up to date dan ga ada
+                    yang jual di Indo. Untungnya lumayan!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full flex justify-center relative -mt-5">
+        <div class="flex items-center absolute -top-9">
+          <div
+            class="
+              mx-14
+              md:mx-12
+              prev-button
+              bg-white
+              shadow-lg
+              p-4
+              rounded-full
+              w-10
+              h-10
+              flex
+              items-center
+            "
+          >
+            <img src="images/arrowleft.svg" alt="" class="w-2" />
+          </div>
+          <div
+            class="
+              mx-14
+              md:mx-12
+              bg-white
+              shadow-lg
+              p-4
+              rounded-full
+              w-10
+              h-10
+              flex
+              items-center
+              next-button
+            "
+          >
+            <img src="images/arrowright.svg" alt="" class="w-2" />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="bg-red-600 mt-7">
       <div
         class="
           max-w-6xl
           mx-auto
           px-10
           md:px-4
-          py-14
+          py-4
           flex
+          items-center
           justify-center
-          space-y-10
         "
       >
-        <div class="w-96 text-white space-y-5 flex flex-col items-center">
-          <p>Promo Spesial Pengguna Baru</p>
-          <div class="text-center">
-            <h3 class="text-2xl font-semibold">Voucher 100rb</h3>
-            <p>berlaku hingga 31 Desember 2021</p>
+        <div class="w-96 text-white space-y-5 flex flex-col items-start">
+          <div class="text-left">
+            <h3 class="md:text-4xl text-2xl font-semibold">VOUCHER 100RB</h3>
+            <p class="text-xs md:text-lg">berlaku hingga 31 Desember 2021</p>
           </div>
-
-          <button class="bg-white py-3 px-4 text-black rounded-md">
+          <button
+            class="
+              bg-white
+              md:py-3
+              py-2
+              px-4
+              font-bold
+              text-black text-sm
+              md:text-lg
+              rounded-md
+            "
+          >
             <a
               href="https://play.google.com/store/apps/details?id=com.lapak.china"
               >Klaim Voucher Sekarang</a
             >
           </button>
+        </div>
+        <div class="-mr-12">
+          <img src="images/voucher.svg" alt="" class="md:w-72" />
         </div>
       </div>
     </section>
@@ -719,19 +992,32 @@
                   ><img src="images/gplay.png" class="object-cover w-44" alt=""
                 /></a>
               </div>
-              <div>
-                <a href="">
-                  <img
-                    src="images/appstore.png"
-                    class="object-cover w-44"
-                    alt=""
-                  />
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="fixed bottom-5 right-5" style="z-index: 99">
+      <a
+        href="https://wa.me/+6281210004668?text=%20Hi%20ASKA%2C%20Bisa%20Bantu%20saya%20untuk%20berbelanja%20produk%20impor%20China%20untuk%20dropship%20di%20aplikasi%20LapakChina%3F%0A"
+      >
+        <div
+          class="
+            bg-green-500
+            text-white
+            px-5
+            py-3
+            flex
+            items-center
+            rounded-xl
+            space-x-3
+          "
+        >
+          <img src="images/wa.png" alt="" class="md:w-7 w-5" />
+          <p>Whatsapp</p>
+        </div>
+      </a>
     </section>
 
     <footer class="bg-red-600">
@@ -754,7 +1040,7 @@
             text-white
             md:text-md
             text-sm text-center
-            md:text-left
+            md:text-h-56
             mt-3
             md:mt-0
           "
@@ -781,6 +1067,8 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
     <script>
       const btn = document.querySelector("button.mobile-menu-button");
       const menu = document.querySelector(".mobile-menu");
